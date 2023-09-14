@@ -20,7 +20,7 @@ namespace Asplab1.Pages;
         {
             var httpClient = _httpClientFactory.CreateClient();
             // URL de tu API
-            var apiUrl = "http://ip172-18-0-35-cju9tpogftqg00abhc40-8080.direct.labs.play-with-docker.com/pruebas";
+            var apiUrl = "https://teamapi.bladimirchipana.repl.co/pruebas";
             var response = await httpClient.GetAsync(apiUrl);
 
             if (response.IsSuccessStatusCode)
