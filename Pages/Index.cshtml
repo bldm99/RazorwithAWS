@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Laboratorio 2</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Dueño</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tienda in Model.Data)
+        {
+            <tr>
+                <td>@tienda._id</td>
+                <td>@tienda.dueño</td>
+                <td>@tienda.d_email</td>
+                <!-- Agrega más columnas según las propiedades de tu modelo -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
