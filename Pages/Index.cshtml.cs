@@ -2,7 +2,7 @@
 using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Newtonsoft.Json; // Asegúrate de tener la biblioteca Newtonsoft.Json instalada
+using Newtonsoft.Json; // biblioteca Newtonsoft.Json 
 
 namespace Asplab1.Pages;
     public class IndexModel : PageModel
